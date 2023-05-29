@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="career.css">
 </head>
 <body>
-  <section>
+  <section class="start">
     <header>
         <img class="logo" src="images/Group 1 white .svg" alt="logo"></li>
         <nav>
@@ -30,21 +30,39 @@
         <h1>We love to talk</h1>
         <p id="p1">just say hello :)</p>
     </div>
-
+    </section>
+    
+    <section class="end">
     <div class="grid-container">
-      <div class="third">
-        <img class="map" src="images/map.png" alt="map">
-      </div>
+      <div class="map"></div>
       <div class="third white">
-        <h2 class="white">Meet us</h2>
-        <p class="third-p">+382 20 223 244 <br> 
-          info@amplitudo.me <br> Bulevar Svetog Petra Cetinjskog <br>
-          56 Podgorica, Crna Gora</p>
+        <div class="cont2">
+          <h2 class="white-h">Meet us</h2>
+          <p class="third-p">+382 20 223 244 <br> 
+            info@amplitudo.me <br> Bulevar Svetog Petra Cetinjskog <br>
+            56 Podgorica, Crna Gora</p>
+          <a class="third-p" href="https://amplitudo.me/"><img src="images/Group 1094.svg" alt="socials"></a>
+        </div>
       </div>
       <div class="third grey">
-        <h2 class="grey">Contact us</h2>
-        <p class="third-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <div class="cont3">
+          <h2 class="grey-h">Contact us</h2>
+          <form action="action_page.php">
+        
+            <label for="fname"></label>
+            <input type="text" id="fname" name="firstname" placeholder="Full name">
+        
+            <label for="email"></label>
+            <input type="text" id="lname" name="email" placeholder="Email">
+        
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Message" style="height:100px"></textarea>
+        <br>
+            <input type="image" src="images/Group 1061.svg" value="Submit">
+          </form>
+        </div>
       </div>
     </div>
+  </section>
 </body>
 </html>
