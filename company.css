@@ -1,0 +1,464 @@
+:root {
+    --primary-color: #384F63;
+    --accent-color: #283E51;
+    --shadow-color: #f5f5f5;
+    --nav-color: #67859E;
+    --footer-white: #FFFFFF;
+    --footer-green: #17AC9D;
+}
+
+@font-face {
+    font-family: "Butler-Light";
+    src: url("fonts/Butler_Light.woff");
+}
+
+@font-face {
+    font-family: "Butler-Ultra-Light";
+    src: url("fonts/Butler_Ultra_Light.woff");
+}
+
+@font-face {
+    font-family: "Butler-Regular";
+    src: url("fonts/Butler_Regular.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("fonts/Gilroy-Bold.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("fonts/Gilroy-Medium.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("fonts/Gilroy-Regular.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url("fonts/Gilroy-Light.woff");
+}
+
+@font-face {
+    font-family: "Rockness-Regular";
+    src: url("fonts/Rockness.woff");
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    font-family: "Gilroy-Medium", sans-serif;
+	line-height: 1.6;
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+li, a, button {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 18px;
+    color: var(--nav-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: var(--primary-color);
+}
+
+.cta {
+    margin-left: 5%;
+}
+
+button {
+    padding: 15px;
+    border-color: var(--nav-color);
+    background-color: transparent;
+    transition: all 0.3s ease 0s;
+    margin-left: 50px;
+}
+
+h1 {
+    font-family: "Butler-Regular", sans-serif;
+    font-size: 84px;
+    line-height: 72px;
+    color: var(--primary-color);
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24%;
+    margin-right: 24%;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-family: "Rockness-Regular", sans-serif;
+    font-size: 70px;
+    line-height: 72px;
+    color: var(--footer-green);
+    font-weight: normal;
+}
+
+.hexa {
+    position: absolute;
+    width: 22vw;
+    left: -5%;
+    margin-top: 16%;
+}
+
+.section-p {
+    font-family: "Butler-Light", sans-serif;
+    font-size: 26px;
+    line-height: 36px;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.triangle {
+    position:absolute;
+    right: -2%;
+    width: 14vw;
+    margin-top: 26%;
+}
+.content {
+    background: var(--footer-white) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 50px #67859E26;
+    border-radius: 24px;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20%;
+    margin-bottom: 25%;
+}
+
+.rectangle {
+    width: 80%;
+    margin: 10% 10% 10% 10%;
+}
+
+.text {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--accent-color);
+    opacity: 80%;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    width: 100%;
+    margin-top: -26%;
+}
+
+.rectangle-grid {
+    background-color: var(--shadow-color); 
+    text-align: center;
+    margin: 5%;
+
+}
+
+.left {
+    margin-left: 30%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.center {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.right {
+    margin-right: 30%;
+    padding-top: 3%;
+    padding-bottom: 7.5%;
+}
+
+h3 {
+    font-family: "Butler-Regular", sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    color: var(--footer-green);
+}
+
+.iso-p {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    text-align: center;
+}
+
+.oom {
+    background-color: lightgray; 
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 12%;
+}
+
+.white {
+    color: var(--footer-white);
+}
+
+.oom-p {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    color: var(--footer-white);
+    opacity: 80%;
+    line-height: 28px;
+}
+
+.mission {
+    color: var(--accent-color);
+}
+
+.navy {
+    background-color: var(--accent-color);
+}
+
+.cyan {
+    background-color: var(--footer-green);
+}
+
+.grey {
+    background-color: var(--shadow-color);
+}
+
+.clients {
+    font-family: "Butler-Light", sans-serif;
+    font-size: 64px;
+    line-height: 68px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.clients-p {
+    color: var(--accent-color);
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    opacity: 80%;
+}
+
+.grid-clients {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+  
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+footer{ 
+    background-color: #283E51;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.map {
+    width: 65%;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.footer-services {
+    position: absolute;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 22px;
+    color: var(--footer-white);
+    margin-top: -40%;
+}
+
+.contact {
+    position: absolute;
+    font-family: "Gilroy-Bold", sans-serif;
+    color: var(--footer-white);
+    font-size: 38px;
+    margin-top: -31%;
+}
+
+#arrow {
+    position: absolute;
+    margin-top: -32.5%;
+}
+
+.footer-rectangle {
+    position: absolute;
+    margin-top: -16%;
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
+}
+
+#dot {
+    height: 50px;
+    width: 50px;
+    background-color: var(--footer-green);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 35.5%;
+    margin-bottom: 16.8%;
+}
+
+.footer-logo {
+    position: absolute;
+    margin-top: -17%;
+    left: 36%;
+}
+
+#dot2 {
+    height: 18px;
+    width: 18px;
+    background-color: var(--footer-white);
+    opacity: 20%;
+    margin-bottom: 9%;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+#dot3 {
+    height: 10px;
+    width: 10px;
+    background-color: var(--footer-green);
+    margin-bottom: 9%;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.footer-hello {
+    position: absolute;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 18px;
+    color: var(--accent-color);
+    margin-bottom: 18%;
+}
+
+#smiley {
+    position: absolute;
+    margin-top: -17%;
+    margin-left: 22%;
+}
+
+#amplitudo {
+    position: absolute;
+    margin-top: 5%;
+    max-width: 14%;
+}
+
+.footer-p {
+    position: absolute;
+    margin-top: 20%;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 15px;
+    color: var(--footer-white);
+    text-align: center;
+    padding: 0;
+}
+
+.p1 {
+    margin-top: 12%;
+}
+
+.p2 {
+    margin-top: 15%;
+}
+
+.p3 {
+    margin-top: 16.5%;
+}
+
+.p4 {
+    margin-top: 21%;
+}
+
+.p5 {
+    margin-top: 25%;
+}
+
+.p6 {
+    margin-top: 33%;
+}
+
+.social {
+    position: absolute;
+    margin-top: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-a {
+    box-sizing: content-box;
+    max-width: 80%;
+    margin-left: 10%;
+    
+}
+
+.p7 {
+    margin-top: 45%;
+    opacity: 40%;
+}
